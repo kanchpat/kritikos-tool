@@ -28,6 +28,15 @@ We maintain detailed side-by-side reports for different toolsets:
 
 - **[Claude Code vs. Gemini CLI](./comparisons/claude-vs-gemini/comparison.md)**: A deep dive into the two current leading AI coding CLI tools.
 
+### Video Demos
+
+| Demo | Description | Video |
+|---|---|---|
+| Bug Fix Challenge | Both tools fix 3 bugs in an Express.js API | [Watch on YouTube](<!-- TODO: add link -->) |
+| Multi-File Refactor | Refactoring duplicated auth code in a Flask app | [Watch on YouTube](<!-- TODO: add link -->) |
+| Greenfield Feature | Adding features + tests to a TODO API | [Watch on YouTube](<!-- TODO: add link -->) |
+| Codebase Q&A | Explaining an auth flow in a React + Express app | [Watch on YouTube](<!-- TODO: add link -->) |
+
 ---
 
 ## 🛠️ How to Use
