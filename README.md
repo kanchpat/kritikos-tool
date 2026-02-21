@@ -2,73 +2,59 @@
 
 > **kritikos** (*Greek*: κριτικός) – relating to judging; fit for judging; able to discern.
 
-`Kritikos Tool` is an open-source evaluation suite designed to benchmark, compare, and analyze the capabilities of modern AI-powered coding CLI tools. This repository currently focuses on a side-by-side comparison between **Claude Code** and **Gemini CLI**.
+`Kritikos Tool` is an open-source evaluation suite designed to benchmark, compare, and analyze the capabilities of modern AI-powered tools. The tools can vary based on the use case. 
 
-The goal of this project is to provide developers with a transparent, reproducible way to understand which tools excel at specific tasks, from simple bug fixes to complex codebase refactors.
-
----
-
-## 📊 Feature Comparison At-a-Glance
-
-| Dimension | Claude Code Strength | Gemini CLI Strength |
-|---|---|---|
-| **Context Size** | 200K tokens | **1M tokens (5x larger)** |
-| **Pricing** | API Costs / Pro Plan | **1,000 req/day FREE** |
-| **IDE Support** | JetBrains + VS Code | Native VS Code Diffs |
-| **Platform** | macOS, Linux, WSL2 | **Native Windows Support** |
-| **Workflow** | Built-in `/commit`, `/review-pr` | Useful `/undo`, `/back` navigation |
-| **Extensibility** | MCP Servers | Extension Registry + CLI |
-| **Edit Logic** | Exact String Matching | Auto-retry Pattern Matching |
-
-For a deep dive into the 12+ categories of comparison, see our [Full Comparison Document](./comparison.md).
+This repository provides developers with a transparent, reproducible framework to understand which AI tools excel at specific tasks, from low-level bug fixes to large-scale codebase refactoring.
 
 ---
 
-## 🧪 The Benchmarking Suite
+## 🔎 Benchmarking Framework
 
-We test tools against real-world scenarios in the `tests/` directory:
+We evaluate tools based on their performance across several critical dimensions:
 
-| Test Case | Description | Tech Stack |
-|---|---|---|
-| **[Bug Fix](./tests/bugfix-app)** | Identification and resolution of logical and syntax errors. | Express.js |
-| **[Multi-File Refactor](./tests/refactor-app)** | Abstracting duplication into decorators and externalizing config. | Flask (Python) |
-| **[Greenfield Feature](./tests/todo-api)** | Adding new models, endpoints, and unit tests from scratch. | Node.js |
-| **[Codebase Q&A](./tests/complex-app)** | Generating end-to-end architectural explanations. | React + Express |
+To name a few
 
----
-
-## 🚀 Useful Applications & Findings
-
-### What works best?
-*   **For Large Codebases:** **Gemini CLI**'s 1M token window allows it to "see" entire monolithic structures that trip up smaller context windows.
-*   **For Precise Workflow:** **Claude Code**'s integration with Git (`/commit`) and its structured "Plan Mode" make it feel more like a surgical instrument for professional developers.
-*   **For Rapid Experimentation:** **Gemini CLI**'s `/undo` command is a game-changer, allowing you to roll back AI-generated changes instantly without cluttering your git history.
-*   **For Windows Developers:** **Gemini CLI** provides a first-class native experience, whereas Claude Code currently requires WSL2.
-
-### Recommendations
-- **Use Claude Code** if you are on macOS/Linux, use JetBrains IDEs, and want a highly opinionated, "agentic" workflow that handles your commits and PR reviews.
-- **Use Gemini CLI** if you need a huge context window, prefer native VS Code diffing, want a generous free tier, or are developing natively on Windows.
+- **Context Window Management**: How effectively the tool handles large codebases (200K vs 1M+ tokens).
+- **Edit Reliability**: The accuracy of the tool's rewrite logic (Exact string matching vs. multi-stage pattern correction).
+- **Agentic Capabilities**: The ability to plan, execute, and verify multi-step tasks autonomously.
+- **Workflow Integration**: Support for git, IDEs, and developer-specific commands (`/commit`, `/undo`, etc.).
+- **Extensibility**: Support for Model Context Protocol (MCP) and custom tool/command systems.
 
 ---
 
-## 🎥 Video Walkthrough
-We've prepared a side-by-side comparison script for a video demonstration of these tools in action. Check out the [Script here](./script.md).
+## 📊 Comparison Reports
+
+We maintain detailed side-by-side reports for different toolsets:
+
+- **[Claude Code vs. Gemini CLI](./comparisons/claude-vs-gemini/comparison.md)**: A deep dive into the two current leading AI coding CLI tools.
 
 ---
 
-## 🛠️ Getting Started
+## 🛠️ How to Use
 
 1.  **Clone the Repo**
     ```bash
-    git clone https://github.com/kanchana/kritikos-tool.git
+    git clone https://github.com/kanchpat/kritikos-tool.git
     cd kritikos-tool
     ```
 
-2.  **Run the Tests**
-    Navigate to any directory in `tests/` and use your preferred CLI tool to solve the challenges described in the local `README.md` files.
+2.  **Select a Test Case**
+    Navigate to a sub-folder in `tests/`.
 
-3.  **Contribute**
-    Find a new tool or an interesting test case? Open a PR!
+3.  **Run Your Tool**
+    Initialize your AI agent (e.g., `claude` or `gemini`) and ask it to solve the challenge described in that folder's `README.md`.
+
+4.  **Compare Results**
+    Evaluate the tool's approach against our criteria and existing reports.
+
+---
+
+## 🚀 Contributing
+
+This is a living project. We welcome:
+- New **Test Cases** (different stacks or harder problems).
+- New **Tool Comparisons** (Bedrock, Vertex AI, Azure Foundry, etc.).
+- Bug reports on existing test apps.
 
 ---
 
