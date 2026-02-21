@@ -19,7 +19,7 @@
 | **.env support** | Via tools / manual | Auto-loads `.env` (walks up directories) |
 | **Auth** | Anthropic API key or OAuth | Google OAuth, API key, or Vertex AI |
 
-**Notes**: Gemini CLI has a deeper settings hierarchy (4 levels vs 2). Claude Code relies on CLAUDE.md files that can be nested at any directory level for scoped instructions. Gemini CLI similarly supports GEMINI.md at project root.
+**Notes**: Gemini CLI has a deeper settings hierarchy (4 levels vs 2). Both tools support nested context files at any directory level for scoped instructions — CLAUDE.md and GEMINI.md can be placed in subdirectories for component-specific context. Gemini CLI also supports a global `~/.gemini/GEMINI.md` and automatically discovers context files when tools access new directories (up to 200 dirs, configurable).
 
 ---
 
