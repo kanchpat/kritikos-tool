@@ -1,10 +1,28 @@
 # Claude Code vs Gemini CLI — Feature Comparison
 
-> Last updated: 2026-02-19
+> Last updated: 2026-02-21
+
+## Scorecard
+
+| # | Category | Claude Code | Gemini CLI | Winner |
+|---|---|---|---|---|
+| 1 | Setup & Configuration | 7 | 9 | Gemini CLI |
+| 2 | Supported Models & Providers | 8 | 8 | Tie |
+| 3 | Code Editing | 7 | 9 | Gemini CLI |
+| 4 | Context Management | 7 | 9 | Gemini CLI |
+| 5 | Tool / MCP Support | 9 | 8 | Claude Code |
+| 6 | IDE Integrations | 9 | 7 | Claude Code |
+| 7 | Agentic Capabilities | 9 | 8 | Claude Code |
+| 8 | Skills / Custom Commands | 7 | 9 | Gemini CLI |
+| 9 | Extensibility | 6 | 9 | Gemini CLI |
+| 10 | Pricing / Token Usage | 6 | 9 | Gemini CLI |
+| 11 | Platform Support | 7 | 9 | Gemini CLI |
+| 12 | Open Source | 8 | 8 | Tie |
+| | **Total** | **90** | **102** | |
 
 ---
 
-## 1. Setup & Configuration
+## 1. Setup & Configuration — Claude Code: 7 | Gemini CLI: 9 :white_check_mark:
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -23,7 +41,7 @@
 
 ---
 
-## 2. Supported Models & Providers
+## 2. Supported Models & Providers — Claude Code: 8 | Gemini CLI: 8 (Tie)
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -39,7 +57,7 @@
 
 ---
 
-## 3. Code Editing
+## 3. Code Editing — Claude Code: 7 | Gemini CLI: 9 :white_check_mark:
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -57,7 +75,7 @@
 
 ---
 
-## 4. Context Management
+## 4. Context Management — Claude Code: 7 | Gemini CLI: 9 :white_check_mark:
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -74,7 +92,7 @@
 
 ---
 
-## 5. Tool / MCP Support
+## 5. Tool / MCP Support — Claude Code: 9 :white_check_mark: | Gemini CLI: 8
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -89,7 +107,7 @@
 
 ---
 
-## 6. IDE Integrations
+## 6. IDE Integrations — Claude Code: 9 :white_check_mark: | Gemini CLI: 7
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -104,7 +122,7 @@
 
 ---
 
-## 7. Agentic Capabilities
+## 7. Agentic Capabilities — Claude Code: 9 :white_check_mark: | Gemini CLI: 8
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -119,7 +137,7 @@
 
 ---
 
-## 8. Skills / Custom Commands
+## 8. Skills / Custom Commands — Claude Code: 7 | Gemini CLI: 9 :white_check_mark:
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -135,7 +153,7 @@
 
 ---
 
-## 9. Extensibility
+## 9. Extensibility — Claude Code: 6 | Gemini CLI: 9 :white_check_mark:
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -150,7 +168,7 @@
 
 ---
 
-## 10. Pricing / Token Usage
+## 10. Pricing / Token Usage — Claude Code: 6 | Gemini CLI: 9 :white_check_mark:
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -165,7 +183,7 @@
 
 ---
 
-## 11. Platform Support
+## 11. Platform Support — Claude Code: 7 | Gemini CLI: 9 :white_check_mark:
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -182,7 +200,7 @@
 
 ---
 
-## 12. Open Source
+## 12. Open Source — Claude Code: 8 | Gemini CLI: 8 (Tie)
 
 | Feature | Claude Code | Gemini CLI |
 |---|---|---|
@@ -197,15 +215,24 @@
 
 ## Quick Reference Summary
 
-| Dimension | Claude Code Strength | Gemini CLI Strength |
-|---|---|---|
-| **IDE support** | JetBrains + VS Code | Native VS Code diffs |
-| **Context size** | — | 1M tokens (5x larger) |
-| **Agent system** | Built-in agent types + plan mode | Full extension ecosystem |
-| **Free tier** | — | 1,000 req/day free |
-| **Platform** | — | Native Windows |
-| **Developer workflow** | /commit, /review-pr built-in | /undo, /back navigation |
-| **Extensibility** | — | Extension registry + install CLI |
-| **Precision editing** | Exact string matching | Auto-retry pattern matching |
-| **Memory** | Auto-memory across sessions | Manual via GEMINI.md |
-| **Hooks** | Simple, effective | 10+ lifecycle events |
+**Final Score: Claude Code 90 vs Gemini CLI 102**
+
+| Category | Claude Code | Gemini CLI | Winner |
+|---|---|---|---|
+| Setup & Configuration | 7 | 9 | :white_check_mark: Gemini CLI |
+| Models & Providers | 8 | 8 | Tie |
+| Code Editing | 7 | 9 | :white_check_mark: Gemini CLI |
+| Context Management | 7 | 9 | :white_check_mark: Gemini CLI |
+| Tool / MCP Support | 9 | 8 | :white_check_mark: Claude Code |
+| IDE Integrations | 9 | 7 | :white_check_mark: Claude Code |
+| Agentic Capabilities | 9 | 8 | :white_check_mark: Claude Code |
+| Skills / Custom Commands | 7 | 9 | :white_check_mark: Gemini CLI |
+| Extensibility | 6 | 9 | :white_check_mark: Gemini CLI |
+| Pricing / Token Usage | 6 | 9 | :white_check_mark: Gemini CLI |
+| Platform Support | 7 | 9 | :white_check_mark: Gemini CLI |
+| Open Source | 8 | 8 | Tie |
+| **Total** | **90** | **102** | |
+
+**Claude Code wins**: Tool/MCP Support, IDE Integrations, Agentic Capabilities (3 categories)
+**Gemini CLI wins**: Setup, Code Editing, Context, Skills, Extensibility, Pricing, Platform (7 categories)
+**Tie**: Models & Providers, Open Source (2 categories)
