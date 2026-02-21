@@ -26,16 +26,23 @@ To name a few
 
 We maintain detailed side-by-side reports for different toolsets:
 
-- **[Claude Code vs. Gemini CLI](./comparisons/claude-vs-gemini/comparison.md)**: A deep dive into the two current leading AI coding CLI tools.
+- **[Claude Code vs. Gemini CLI](./claude-vs-gemini/comparison.md)**: A deep dive into the two leading AI coding CLI tools.
+- **[Amazon Bedrock vs. Google Vertex AI](./bedrock-vs-vertexai/comparison.md)**: Enterprise AI platform comparison — deployment, observability, agents, RAG, guardrails, and Terraform/IaC automation.
 
 ### Video Demos
 
+#### Claude Code vs Gemini CLI
 | Demo | Description | Video |
 |---|---|---|
 | Bug Fix Challenge | Both tools fix 3 bugs in an Express.js API | [Watch on YouTube](<!-- TODO: add link -->) |
 | Multi-File Refactor | Refactoring duplicated auth code in a Flask app | [Watch on YouTube](<!-- TODO: add link -->) |
 | Greenfield Feature | Adding features + tests to a TODO API | [Watch on YouTube](<!-- TODO: add link -->) |
 | Codebase Q&A | Explaining an auth flow in a React + Express app | [Watch on YouTube](<!-- TODO: add link -->) |
+
+#### Amazon Bedrock vs Google Vertex AI
+| Demo | Description | Video |
+|---|---|---|
+| Platform Walkthrough | Console-to-console comparison of key features | [Watch on YouTube](<!-- TODO: add link -->) |
 
 ---
 
